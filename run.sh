@@ -1,7 +1,10 @@
 mkdir -p tests/results
 
-python tests/ToH_3.py > ./tests/results/TowerOfHanoi_3.sp
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+export PYTHONPATH="${PYTHONPATH};:${SCRIPT_DIR}/rbs"
 
-python tests/ToH_4.py > ./tests/results/TowerOfHanoi_4.sp
+python3 -m tests.ToH_3 > ./tests/results/TowerOfHanoi_3.sp
 
-python tests/ToH_5.py > ./tests/results/TowerOfHanoi_5.sp
+python3 -m tests.ToH_4 > ./tests/results/TowerOfHanoi_4.sp
+
+python3 -m tests.ToH_5 > ./tests/results/TowerOfHanoi_5.sp

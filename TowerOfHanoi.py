@@ -4,9 +4,9 @@ Tower of Hanoi expert system.
 Usage new instance pass in number of discs. Run a simulation.
 
 """
-from rbs import NealCoverFunctions
-from rbs import FSAHelperFunctions
-from rbs import NeuralCognitiveArchitectureBuilder
+from rbs.nealCoverClass import NealCoverFunctions
+from rbs.stateMachineClass import FSAHelperFunctions
+from rbs.narcBuilder import NeuralCognitiveArchitectureBuilder
 
 class TowerOfHanoi:
     def __init__(self, sim, simulator, discNum):

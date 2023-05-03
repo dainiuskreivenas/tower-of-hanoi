@@ -3,11 +3,6 @@
 Tower of Hanoi 3 disc problem test
 
 """
-import os,sys,inspect
-current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-parent_dir = os.path.dirname(current_dir)
-sys.path.insert(0, parent_dir) 
-
 #import pyNN.spiNNaker as sim
 import pyNN.nest as sim
 
